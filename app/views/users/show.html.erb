@@ -45,6 +45,7 @@
 </div>
 <!--books一覧 -->
 
+<% if @user == current_user %>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['KEY']%>&callback=initMap" async></script>
 <script type="text/javascript">
@@ -78,3 +79,5 @@
 }
 </script>
 <div id="gmap"></div>
+
+<% end %>

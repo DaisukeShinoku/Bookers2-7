@@ -81,6 +81,7 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 
 gem 'jp_prefecture', '~> 0.10.0'
 
+# geocoderは結局使わなかった
 # gem 'geocoder', '~> 1.6', '>= 1.6.3'
 
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'

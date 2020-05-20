@@ -15,7 +15,4 @@ Rails.application.routes.draw do
   root to: 'home#top'
   get "search" => "search#search"
 
-  get 'maps/index'
-  root to: 'maps#index'
-  resources :maps, only: [:index]
 end
