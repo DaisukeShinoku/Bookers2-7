@@ -60,4 +60,14 @@ class User < ApplicationRecord
     self.prefecture_code = JpPrefecture::Prefecture.find(name: prefecture_name).code
   end
 
+  def fulladdress
+    self.prefecture_name + self.address_city + self.address_street
+  end
+
+# カラムは指定できるけど、XXXX.rb内で指定したメソッドでは無理っぽい？
+# geocoderは結局使わなかった
+# geocoded_by :address_city
+# after_validation :geocode
+
+
 end

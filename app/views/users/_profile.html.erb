@@ -11,6 +11,14 @@
 			<th><%= user.introduction %></th>
 		</tr>
 
+<!-- あとで消す！！ -->
+		<tr>
+			<th>address</th>
+			<th><%= user.fulladdress %></th>
+		</tr>
+
+<!-- あとで消す！！ -->
+
 		<tr>
 			<th>follows</th>
 			<th><%= link_to "#{user.follows.count}", follows_user_url(user) %></th>
